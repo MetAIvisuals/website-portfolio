@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stefan Huber - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="dark-mode">
+
+    <!-- Fixed Video Background (Only on Index) -->
+    <div class="video-background fixed-bg">
+        <video autoplay muted loop playsinline id="bg-video">
+            <source src="bg.mp4" type="video/mp4">
+            <!-- Fallback if video fails or not supported -->
+            Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <!-- Navigation (Using container-fluid for wider layout) -->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="nav-brand"><a href="index.html" class="nav-link active">Home</a></div>
+            <ul class="nav-menu">
+                <li><a href="ux.html" class="nav-link">UX</a></li>
+                <li><a href="branding.html" class="nav-link">Branding</a></li>
+                <li><a href="marketing.html" class="nav-link">Marketing</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Landing Hero Section -->
+        <section class="landing-new">
+            <div class="container-fluid">
+                <div class="hero-content">
+                    <p class="hero-intro">Hi, my name is <span class="highlight-name">Stefan Huber</span></p>
+                    <h1 class="hero-title">
+                        I design and create
+
+<div class="word-rotator">
+    <span class="block-reveal block-reveal--active">
+        <span class="block-reveal__text" id="rotatingText">ui/ux</span>
+    </span>
+</div>
+                    </h1>
+                    
+                    <div class="hero-cta">
+                    <p class="hero-intro">Let me <span class="highlight-name">show you:</span></p>
+                        <ul class="cta-links">
+                            <li><a href="ux.html">ui/ux</a></li>
+                            <li><a href="branding.html">brands</a></li>
+                            <li><a href="marketing.html">campaigns</a></li>
+                            <li><a href="marketing.html">imagevideos</a></li>
+                            <li><a href="ai-image.html">ai images</a></li>
+                            <li><a href="ai-video.html">ai videos</a></li>
+                            <li><a href="ai-projects.html">ai projects</a></li>
+                            <li><a href="branding.html">logos</a></li>
+                            <li><a href="branding.html">print</a></li>
+                            <li><a href="marketing.html">out of home</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bio Section -->
+        <section class="bio-section">
+            <div class="container-fluid">
+                <div class="bio-grid">
+                    <div class="bio-image">
+                        <!-- Add your profile photo here -->
+                        <img src="sh.png" alt="bio-photo">
+                    </div>
+                    <div class="bio-text">
+                        <h2>About Me</h2>
+                        <p>
+                            I am a multidisciplinary UI/UX Designer and Art Director with a strong background in digital products, branding, and visual communication. I work with traditional and AI-driven solutions for startups and large corporations, combining design thinking with modern AI workflows.
+                        </p>
+                        <p>
+                           My experience spans all design fields from UI/UX design, logo & branding, art direction, videoproduction, print, prototyping & usertesting to ai image and video workflows.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills & Achievements Section -->
+        <section class="skills-section">
+            <div class="container-fluid">
+                
+                <!-- Row 1: Skills Lists -->
+                <div class="skills-grid-top">
+                    <!-- Column 1 -->
+                    <div class="skill-col">
+                        <h3 class="cyan-header">// MODEL TRAINING //</h3>
+                        <ul>
+                            <li>DreamBooth training</li>
+                            <li>Lora training for Flux, Qwen, Z-Image</li>
+                        </ul>
+                    </div>
+                    <!-- Column 2 -->
+                    <div class="skill-col">
+                        <h3 class="cyan-header">// IMAGEGENERATORS //</h3>
+                        <ul>
+                            <li>ComfyUI & Automatic1111 with Flux-dev1, Flux-dev2, Qwen, Z-Image, SDXL</li>
+                            <li>Midjourney v3 – v7</li>
+                            <li>Nano Banana Pro</li>
+                            <li>Leonardo.ai</li>
+                            <li>Sora</li>
+                            <li>Adobe Firefly</li>
+                        </ul>
+                    </div>
+                    <!-- Column 3 -->
+                    <div class="skill-col">
+                        <h3 class="cyan-header">// VIDEOTOOLS //</h3>
+                        <ul>
+                            <li>Wan2.2</li>
+                            <li>Kling</li>
+                            <li>Animatediff</li>
+                            <li>Warpdiffusion</li>
+                            <li>Sora</li>
+                            <li>Runway</li>
+                            <li>D-ID</li>
+                            <li>Dforum</li>
+                            <li>FFMPEG</li>
+                        </ul>
+                    </div>
+                    <!-- Column 4 -->
+                    <div class="skill-col">
+                        <h3 class="cyan-header">// AUDIO //</h3>
+                        <ul>
+                            <li>Cubase</li>
+                            <li>Udio</li>
+                            <li>Elevenlabs</li>
+                            <li>Suno.ai</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Row 2: Achievements & Other -->
+                <div class="skills-grid-bottom">
+                    <!-- Column 1 -->
+                    <div class="skill-col wide">
+                        <h3 class="cyan-header">// ACHIEVEMENTS //</h3>
+                        <div class="achievement-item">
+                            <h4>Art Basel Miami 2022</h4>
+                            <p>Been part of a collective of 10 people showcasing AI generated images in a VR gallery for the first time at Art Basel</p>
+                        </div>
+                        <div class="achievement-item">
+                            <h4>AI Consultant to Julian Bam film production</h4>
+                            <p>for the third part of "Mann im Mond" AI scenes 2023</p>
+                        </div>
+                        <div class="achievement-item">
+                            <h4>Japanese Art Exhibition in Kiyosato 2023</h4>
+                            <p>showcasing 7 Animatediff videos</p>
+                        </div>
+                        <div class="achievement-item">
+                            <h4>Participant in AI Fashionweek Season 1 in 2022 & Season 2 in 2023</h4>
+                            <p>submitting fashion collections, making it into the voting round</p>
+                        </div>
+                        <div class="achievement-item">
+                            <h4>2024 Lecturing at FH Wien</h4>
+                            <p>about AI Imagegenerators, overview tools, history and function, in depth: Midjourney and Stable Diffusion</p>
+                        </div>
+                        <div class="achievement-item">
+                            <h4>Contributor to Adobe Stockimages (with AI images)</h4>
+                            <p>promptBase and Civitai (Merged checkpoint model and loras)</p>
+                        </div>
+                    </div>
+
+                    <!-- Column 2 -->
+                    <div class="skill-col wide">
+                        <h3 class="cyan-header">// OTHER //</h3>
+                        <ul>
+                            <li>NERF creation with Lumalabs.ai</li>
+                            <li>Deepfake with DeepfaceLab</li>
+                            <li>Deepfake with Roop Unleashed</li>
+                            <li>Creating Custom GPTs with ChatGPT</li>
+                           <li>Creating Applications with Gemini3 (see AI Projects)</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

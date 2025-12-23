@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body class="dark-mode">
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html" class="nav-link">Home</a>
+            </div>
+
+            <ul class="nav-menu">
+                <li><a href="ux.html" class="nav-link">UX</a></li>
+                <li><a href="branding.html" class="nav-link">Branding</a></li>
+                <li><a href="marketing.html" class="nav-link">Marketing</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+<section class="contact-page">
+    <div class="container">
+
+        <h1 class="page-title">Get In Touch</h1>
+        <p class="page-subtitle">Let's create something amazing together</p>
+
+        <div class="contact-content">
+
+            <!-- CONTACT INFO -->
+            <div class="contact-info">
+
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <div>
+                        <h3>Email</h3>
+                        <p>
+                            <a href="mailto:stefan.huber.wien@gmail.com" class="contact-link">
+                                stefan.huber.wien@gmail.com
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">💼</div>
+                    <div>
+                        <h3>LinkedIn</h3>
+                        <p>
+                            <a href="https://www.linkedin.com/in/stefan-huber-design/"
+                               class="contact-link"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                linkedin.com/in/stefan-huber-design
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">🐙</div>
+                    <div>
+                        <h3>GitHub</h3>
+                        <p>
+                            <a href="https://github.com/MetAIvisuals"
+                               class="contact-link"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                github.com/MetAIvisuals
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- FORMSPREE FORM -->
+<form class="contact-form"
+      action="https://formspree.io/f/mwvekqrr"
+      method="POST">
+
+    <div class="form-group">
+        <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required>
+    </div>
+
+    <div class="form-group">
+        <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            required>
+    </div>
+
+    <div class="form-group">
+        <textarea
+            name="message"
+            placeholder="Your Message"
+            rows="5"
+            required></textarea>
+    </div>
+
+    <!-- Optional but recommended -->
+    <input type="hidden" name="_subject" value="New contact request from portfolio">
+
+    <button type="submit" class="btn btn-primary">
+        Send Message
+    </button>
+</form>
+
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
