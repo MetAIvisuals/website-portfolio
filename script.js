@@ -56,37 +56,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Auto-play videos in portfolio grid on hover
-document.querySelectorAll('.portfolio-video video').forEach(video => {
-    const portfolioItem = video.closest('.portfolio-item');
-    
-    portfolioItem.addEventListener('mouseenter', () => {
-        video.play().catch(e => console.log('Video play failed:', e));
-    });
-    
-    portfolioItem.addEventListener('mouseleave', () => {
-        video.pause();
-        video.currentTime = 0;
-    });
-});
 
-// Form submission handler
-const contactForm = document.querySelector('.contact-form');
-if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        
-        const name = contactForm.querySelector('input[type="text"]').value;
-        const email = contactForm.querySelector('input[type="email"]').value;
-        const message = contactForm.querySelector('textarea').value;
-        
-        // Here you would typically send the data to a server
-        alert(`Thank you for your message, ${name}! I'll get back to you at ${email} soon.`);
-        
-        // Reset form
-        contactForm.reset();
-    });
-}
 
 // Fade in animation on scroll for portfolio items
 const portfolioItems = document.querySelectorAll('.portfolio-item');
