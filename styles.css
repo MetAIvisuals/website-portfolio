@@ -183,7 +183,7 @@ html {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.7); /* Dark overlay for text readability */
+    background: rgba(0, 0, 0, 0.3); /* Dark overlay for text readability */
     z-index: 1;
 }
 
@@ -823,4 +823,110 @@ html {
     .contact-content { grid-template-columns: 1fr; gap: 3rem; }
     .bio-grid { grid-template-columns: 1fr; }
     .skills-grid-top { grid-template-columns: 1fr; gap: 2rem; }
+}
+
+
+/* =========================================
+   8. VIDEO PAGE SPECIFIC STYLES
+   ========================================= */
+.video-page {
+    padding: 120px 0 80px;
+    min-height: 100vh;
+}
+
+.video-list {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 3rem;
+}
+
+.video-item {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+    transition: transform 0.3s ease;
+}
+
+.video-item:hover {
+    transform: translateY(-5px);
+}
+
+.video-thumbnail {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.video-thumbnail:hover {
+    transform: scale(1.02);
+}
+
+.video-thumbnail img {
+    width: 100%;
+    height: 250px; /* Increased height for larger thumbnails */
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}
+
+.video-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-top: 0.8rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+.video-thumbnail:hover .video-title {
+    color: var(--primary-color);
+}
+
+.video-info {
+    padding: 0;
+}
+
+.video-info p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    font-size: 0.95rem;
+    text-align: center;
+}
+
+/* Remove any existing play button styles */
+.video-thumbnail .play-button {
+    display: none !important;
+}
+
+/* Responsive for Video Page */
+@media (max-width: 768px) {
+    .video-list {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .video-thumbnail img {
+        height: 220px;
+    }
+}
+
+/* On larger screens, make thumbnails even bigger */
+@media (min-width: 1024px) {
+    .video-list {
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    }
+    
+    .video-thumbnail img {
+        height: 280px;
+    }
 }
